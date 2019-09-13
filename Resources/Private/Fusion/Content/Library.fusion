@@ -1,0 +1,5 @@
+prototype(GoE.Neos:Content.Library) < prototype(Neos.Neos:ContentComponent) {
+    renderer = GoE.Neos:Component.Element.Library {
+        @apply.props = ${props}
+    }
+}

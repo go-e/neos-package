@@ -1,0 +1,18 @@
+{
+    "description": "GoEssential integration for Neos CMS",
+    "type": "neos-plugin",
+    "name": "goe/neos-package",
+    "require": {
+        "neos/neos": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "GoE\\Neos\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "GoE.Neos"
+        }
+    }
+}

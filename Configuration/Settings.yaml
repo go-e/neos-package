@@ -1,0 +1,11 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        GoE.Neos: true
+    nodeTypes:
+      groups:
+        goessential:
+          position: 1
+          label: 'Go Essential'
+

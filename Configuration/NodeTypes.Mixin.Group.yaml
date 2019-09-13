@@ -1,0 +1,9 @@
+GoE.Neos:Mixin.Group:
+  ui:
+    group: goessential
+    inspector:
+      groups:
+        goessential:
+          label: Go Essential
+          position: 1
+          icon: 'icon-gear'

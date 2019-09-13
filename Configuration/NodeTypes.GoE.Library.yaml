@@ -1,0 +1,16 @@
+GoE.Neos:Content.Library:
+  abstract: false
+  superTypes:
+    'Neos.Neos:Content': true
+    'GoE.Neos:Mixin.Group': true
+  ui:
+    label: GoEssential Library
+    icon: plus
+  properties:
+    organisationId:
+      type: string
+      ui:
+        label: "Organisation ID"
+        inspector:
+          group: goessential
+

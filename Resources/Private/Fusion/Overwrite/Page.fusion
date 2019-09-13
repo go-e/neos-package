@@ -1,0 +1,4 @@
+prototype(Neos.Neos:Page) {
+    goeBodyScript = '<script src="https://app.goessential.com/app/client.bundle.js"></script>'
+    goeBodyScript.@position = 'before closingBodyTag'
+}
