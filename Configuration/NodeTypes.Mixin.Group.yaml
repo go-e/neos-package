@@ -4,6 +4,6 @@ GoE.Neos:Mixin.Group:
     inspector:
       groups:
         goessential:
-          label: Go Essential
+          label: GoEssential
           position: 1
           icon: 'icon-gear'
