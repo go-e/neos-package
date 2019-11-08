@@ -1,3 +1,4 @@
 GoE.Neos:Mixin.Content:
   superTypes:
     'Neos.Neos:Content': true
+    'GoE.Neos:Mixin.Include': true

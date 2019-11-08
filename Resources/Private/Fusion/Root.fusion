@@ -1,3 +1,1 @@
-include: Overwrite/**/*
-include: Component/**/*
-include: Content/**/*
+include: **/*.fusion

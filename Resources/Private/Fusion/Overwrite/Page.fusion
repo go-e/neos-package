@@ -1,5 +1,7 @@
 prototype(Neos.Neos:Page) {
-    goeBodyScript = '<script src="https://app.goessential.com/app/client.bundle.js"></script>'
-    goeBodyScript.@position = 'before closingBodyTag'
-    goeBodyScript.@if.render = ${q(documentNode).children('[instanceof Neos.Neos:ContentCollection]').find('[instanceof GoE.Neos:Mixin.Content]').is()}
+    head {
+        goeHeadScript = '<script defer src="https://app.goessential.com/app/client.bundle.js"></script>'
+        goeHeadScript.@position = 'after titleTag'
+        goeHeadScript.@if.render = ${q(documentNode).children('[instanceof Neos.Neos:ContentCollection]').find('[instanceof GoE.Neos:Mixin.Include]').is() || q(documentNode).is('[instanceof GoE.Neos:Mixin.Include]')}
+    }
 }
