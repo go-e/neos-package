@@ -1,7 +1,7 @@
 GoE.Neos:Content.Library:
   abstract: false
   superTypes:
-    'Neos.Neos:Content': true
+    'GoE.Neos:Mixin.Content': true
     'GoE.Neos:Mixin.Group': true
   ui:
     label: GoEssential Library

@@ -1,0 +1,3 @@
+GoE.Neos:Mixin.Content:
+  superTypes:
+    'Neos.Neos:Content': true
