@@ -11,6 +11,7 @@ GoE.Neos:Content.Library:
       type: string
       ui:
         label: "Organisation ID"
+        reloadIfChanged: true
         inspector:
           group: goessential
 
