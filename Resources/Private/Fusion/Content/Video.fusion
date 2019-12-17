@@ -5,6 +5,7 @@ prototype(GoE.Neos:Content.Video) < prototype(Neos.Neos:ContentComponent) {
     selector = 'false'
 
     renderer = GoE.Neos:Component.Element.Video {
+        fullWithVideo = ${!props.chapters}
         src = Neos.Fusion:Case {
             youtube {
                 condition = ${!String.isBlank(props.youtubeId)}

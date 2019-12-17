@@ -11,6 +11,7 @@ GoE.Neos:Content.Video:
       type: string
       ui:
         label: "GoEssential ID"
+        reloadIfChanged: true
         help:
           message: 'The ID of the video in our system. It can be found when you show the video in https://app.goessential.com'
         inspector:
@@ -20,8 +21,19 @@ GoE.Neos:Content.Video:
       type: string
       ui:
         label: "Youtube ID"
+        reloadIfChanged: true
         help:
           message: 'The YouTube ID of the video'
+        inspector:
+          group: goessential
+
+    chapters:
+      type: boolean
+      ui:
+        label: "With chapters?"
+        reloadIfChanged: true
+        help:
+          message: 'Adjust viewport if the video will be rendered with chapters'
         inspector:
           group: goessential
 

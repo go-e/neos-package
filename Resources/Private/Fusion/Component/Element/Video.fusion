@@ -1,13 +1,21 @@
 prototype(GoE.Neos:Component.Element.Video) < prototype(Neos.Fusion:Component) {
 
-    frameWidth = '100%'
-    frameHeight = '350px'
+    fullWithVideo = false
 
     renderer = afx`
-        <iframe width={props.frameWidth} height={props.frameHeight}
-                src={props.src}
-                allowfullscreen="true"
-                frameborder="0"></iframe>
-
+        <div class="goe-video">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                    src={props.src}
+                    allowfullscreen="true"
+                    frameborder="0"></iframe>
+        </div>
     `
+    renderer.@process.augment = Neos.Fusion:Augmenter {
+        style = Neos.Fusion:RawArray {
+            position = 'position:relative'
+            padding-bottom = ${'padding-bottom:' + (props.fullWithVideo ? '56.25%' : 'calc(56.25% / 1.2)')}
+            height = 'height:0'
+            @process.implode = ${Array.join(value, ';')}
+        }
+    }
 }
