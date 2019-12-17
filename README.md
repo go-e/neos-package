@@ -24,7 +24,7 @@ Once you have created a new content element you have to set your GoEssential org
 Your GoEssential video library is now ready for publishing:
 ![Preview in the Neos demo site](Documentation/goe-neos-example.png)
 
-### GoE.Neos:Content.Library
+### GoE.Neos:Content.Video
 If you would like to embed a single video you can do that as well. You can either set a GoEssential or a Youtube video ID.
 ![Preview in the Neos demo site](Documentation/goe-neos-inspector-video.png)
 
