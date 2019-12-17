@@ -1,0 +1,27 @@
+GoE.Neos:Content.Video:
+  abstract: false
+  superTypes:
+    'GoE.Neos:Mixin.Content': true
+    'GoE.Neos:Mixin.Group': true
+  ui:
+    label: GoEssential Video
+    icon: plus
+  properties:
+    goEssentialId:
+      type: string
+      ui:
+        label: "GoEssential ID"
+        help:
+          message: 'The ID of the video in our system. It can be found when you show the video in https://app.goessential.com'
+        inspector:
+          group: goessential
+
+    youtubeId:
+      type: string
+      ui:
+        label: "Youtube ID"
+        help:
+          message: 'The YouTube ID of the video'
+        inspector:
+          group: goessential
+

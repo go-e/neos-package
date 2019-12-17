@@ -1,0 +1,13 @@
+prototype(GoE.Neos:Component.Element.Video) < prototype(Neos.Fusion:Component) {
+
+    frameWidth = '100%'
+    frameHeight = '350px'
+
+    renderer = afx`
+        <iframe width={props.frameWidth} height={props.frameHeight}
+                src={props.src}
+                allowfullscreen="true"
+                frameborder="0"></iframe>
+
+    `
+}

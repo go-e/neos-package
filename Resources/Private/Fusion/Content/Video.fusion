@@ -1,0 +1,25 @@
+prototype(GoE.Neos:Content.Video) < prototype(Neos.Neos:ContentComponent) {
+    url = 'https://app.goessential.com/embedfull.html?'
+    viewMode = 'chapters'
+    viewWidth = '30'
+    selector = 'false'
+
+    renderer = GoE.Neos:Component.Element.Video {
+        src = Neos.Fusion:Case {
+            youtube {
+                condition = ${!String.isBlank(props.youtubeId)}
+                renderer = ${props.url + 'ytid=' + props.youtubeId}
+            }
+
+            goEssential {
+                condition = ${!String.isBlank(props.goEssentialId)}
+                renderer = ${props.url + 'id=' + props.goEssentialId + '&viewMode='+props.viewMode+'&viewWidth='+props.viewWidth+'&selector='+props.selector}
+            }
+
+            default {
+                condition = true
+                renderer = "#"
+            }
+        }
+    }
+}
