@@ -1,4 +1,5 @@
 prototype(GoE.Neos:Content.Library) < prototype(Neos.Neos:ContentComponent) {
+    organisationId = ${q(node).property('organisationId')}
     renderer = GoE.Neos:Component.Element.Library {
         @apply.props = ${props}
     }

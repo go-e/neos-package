@@ -1,4 +1,6 @@
 prototype(GoE.Neos:Component.Element.Library) < prototype(Neos.Fusion:Component) {
+    organisationId = ''
+
     renderer = afx`
         <div id="goe-react-render-target" organizationId={props.organisationId}></div>
     `
