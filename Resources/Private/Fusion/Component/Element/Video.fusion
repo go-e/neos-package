@@ -1,5 +1,5 @@
 prototype(GoE.Neos:Component.Element.Video) < prototype(Neos.Fusion:Component) {
-
+    src = ''
     fullWithVideo = false
 
     renderer = afx`
@@ -11,7 +11,7 @@ prototype(GoE.Neos:Component.Element.Video) < prototype(Neos.Fusion:Component) {
         </div>
     `
     renderer.@process.augment = Neos.Fusion:Augmenter {
-        style = Neos.Fusion:RawArray {
+        style = Neos.Fusion:DataStructure {
             position = 'position:relative'
             padding-bottom = ${'padding-bottom:' + (props.fullWithVideo ? '56.25%' : 'calc(56.25% / 1.2)')}
             height = 'height:0'
